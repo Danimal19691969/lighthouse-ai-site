@@ -44,6 +44,7 @@ function App() {
     motionSpeed: 1,
     motionIntensity: 0.5
   });
+  // Sparkle cursor settings
   const [sparkleSettings, setSparkleSettings] = useState<SparkleSettings>({
     enabled: false,
     particleSize: 2,
