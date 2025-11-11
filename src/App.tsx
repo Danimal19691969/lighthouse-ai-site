@@ -218,7 +218,7 @@ function App() {
                 />
               )}
               <motion.img
-                src="/New Logo 2.png"
+                src="/logo.png"
                 alt="Sacred Machines"
                 loading="eager"
                 className="w-24 h-24 object-contain relative z-10 drop-shadow-[0_0_10px_rgba(34,211,238,0.3)] group-hover:drop-shadow-[0_0_15px_rgba(34,211,238,0.5)] transition-all duration-500"
@@ -1027,7 +1027,7 @@ function App() {
               <div className="relative">
                 <div className="absolute inset-0 bg-cyan-400/0 group-hover:bg-cyan-400/30 blur-2xl transition-all duration-500 rounded-full" />
                 <motion.img
-                  src="/New Logo 2.png"
+                  src="/logo.png"
                   alt="Sacred Machines"
                   loading="lazy"
                   className="w-16 h-16 object-contain relative z-10 group-hover:drop-shadow-[0_0_12px_rgba(34,211,238,0.4)] transition-all duration-500"
