@@ -1,4 +1,4 @@
-import { Sparkles, Users, Briefcase, GraduationCap, Zap, ArrowRight, ArrowDown, Code, Video, Palette, Bot, Rocket, TrendingUp, Target, Award } from 'lucide-react';
+import { Sparkles, Users, Briefcase, GraduationCap, Zap, ArrowRight, Code, Video, Palette, Bot, Rocket, TrendingUp, Target, Award } from 'lucide-react';
 import { useState, useEffect, useRef, lazy, Suspense } from 'react';
 import { motion } from 'framer-motion';
 import ContactModal from './components/ContactModal';
@@ -44,7 +44,6 @@ function App() {
     motionSpeed: 1,
     motionIntensity: 0.5
   });
-  // Sparkle cursor settings
   const [sparkleSettings, setSparkleSettings] = useState<SparkleSettings>({
     enabled: false,
     particleSize: 2,
@@ -219,7 +218,7 @@ function App() {
                 />
               )}
               <motion.img
-                src="/logo.png"
+                src="/New Logo 2.png"
                 alt="Sacred Machines"
                 loading="eager"
                 className="w-24 h-24 object-contain relative z-10 drop-shadow-[0_0_10px_rgba(34,211,238,0.3)] group-hover:drop-shadow-[0_0_15px_rgba(34,211,238,0.5)] transition-all duration-500"
@@ -309,23 +308,14 @@ function App() {
               style={{ perspective: '1000px' }}
             >
               <button
-                onClick={() => {
-                  const nextSection = document.querySelector('section:nth-of-type(2)');
-                  if (nextSection) {
-                    const targetPosition = nextSection.getBoundingClientRect().top + window.pageYOffset - 80;
-                    window.scrollTo({
-                      top: targetPosition,
-                      behavior: 'smooth'
-                    });
-                  }
-                }}
+                onClick={() => setIsBookingModalOpen(true)}
                 className="group relative overflow-hidden bg-white/10 backdrop-blur-md border-2 border-cyan-400/30 text-white font-semibold text-sm hover:bg-white/20 hover:border-cyan-400 transition-all card-3d button-hover-lift w-56 h-12 flex items-center justify-center"
                 style={{ borderRadius: '100px', boxShadow: '0 8px 32px rgba(6, 182, 212, 0.1)' }}
                 aria-label="Explore our services"
               >
                 <div className="flex items-center justify-center gap-2 px-5 text-center">
                   <span className="leading-tight">Let's Explore...</span>
-                  <ArrowDown className="w-5 h-5 group-hover:translate-y-1 transition-transform" />
+                  <ArrowRight className="w-5 h-5 group-hover:translate-x-2 transition-transform" />
                 </div>
               </button>
             </motion.div>
@@ -1028,7 +1018,7 @@ function App() {
               <div className="relative">
                 <div className="absolute inset-0 bg-cyan-400/0 group-hover:bg-cyan-400/30 blur-2xl transition-all duration-500 rounded-full" />
                 <motion.img
-                  src="/logo.png"
+                  src="/New Logo 2.png"
                   alt="Sacred Machines"
                   loading="lazy"
                   className="w-16 h-16 object-contain relative z-10 group-hover:drop-shadow-[0_0_12px_rgba(34,211,238,0.4)] transition-all duration-500"

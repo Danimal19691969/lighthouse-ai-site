@@ -1,5 +1,5 @@
 import { X } from 'lucide-react';
-import { useRef, useEffect } from 'react';
+import { useState, useRef, useEffect } from 'react';
 
 interface Song {
   id: number;
@@ -50,7 +50,7 @@ export default function MusicPlayer({
 
     const audio = audioRef.current;
     const handleEnded = () => {
-      setCurrentSongIndex((currentSongIndex + 1) % songs.length);
+      setCurrentSongIndex((prev) => (prev + 1) % songs.length);
     };
 
     audio.addEventListener('ended', handleEnded);
